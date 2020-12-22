@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: aqua;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clokc-br {
+    width: 90%;
+    height: 90%;
+    background-color: aqua;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    position: relative;
+    padding: 1rem;
+}
+
+.hand {
+    width: 45%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transition: all 0.05s;
+    -webkit-transition: all 0.05s;
+    -moz-transition: all 0.05s;
+    -ms-transition: all 0.05s;
+    -o-transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.second {
+    background-color: red;
+}
+
+.minute {
+    background-color: rgb(247, 9, 255);
+}
